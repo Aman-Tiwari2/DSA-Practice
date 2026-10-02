@@ -23,3 +23,13 @@ for i in hash_map:
     # else:
     #     print(False)
     
+# Method 2 
+
+nums = [5, 6, 7, 7, 1, 9, 111, 1, 1, 5, 1, 1]
+dist = {}
+
+for i in range(0, len(nums)):
+    dist[nums[i]] = dist.get(nums[i], 0) + 1
+    
+print(dist)
+
